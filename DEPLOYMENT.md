@@ -46,7 +46,8 @@ git clone https://github.com/yourusername/SGCleaner.git
 cd SGCleaner
 
 # Install dependencies
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
 
 # Set up environment (optional)
 cp env_example.txt .env

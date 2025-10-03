@@ -25,7 +25,8 @@ A powerful Streamlit application that cleans and optimizes DOCX style guide file
 2. Install the required dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
 ```
 
 3. (Optional) Set up OpenAI integration:
@@ -65,7 +66,8 @@ python run.py
 
 ```bash
 # Install dependencies
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
 
 # Set up environment (optional)
 cp env_example.txt .env
