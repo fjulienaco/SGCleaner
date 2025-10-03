@@ -2,12 +2,27 @@ import streamlit as st
 import os
 import tempfile
 import re
-import markdown
 from typing import List, Dict, Tuple
 import io
-import openai
-from dotenv import load_dotenv
 import json
+
+# Handle optional imports gracefully
+try:
+    import markdown
+except ImportError:
+    markdown = None
+
+try:
+    import openai
+except ImportError:
+    openai = None
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    def load_dotenv():
+        pass
 
 # Handle docx import with better error handling
 try:
@@ -37,6 +52,9 @@ st.set_page_config(
 
 def setup_openai():
     """Setup OpenAI client with API key"""
+    if openai is None:
+        return None
+        
     # Try multiple sources for API key
     api_key = (
         st.session_state.get('openai_api_key') or  # User input in sidebar
