@@ -16,7 +16,7 @@
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: Style Guide Cleaner Pro"
+   git commit -m "Initial commit: Acolad Style Guide Cleaner"
    git branch -M main
    git remote add origin https://github.com/yourusername/SGCleaner.git
    git push -u origin main
@@ -74,4 +74,4 @@ streamlit run app.py
 - ✅ `.gitignore` excludes sensitive files
 - ✅ No hardcoded credentials in the code
 
-Your Style Guide Cleaner Pro is ready for deployment! 🎉
+Your Acolad Style Guide Cleaner is ready for deployment! 🎉

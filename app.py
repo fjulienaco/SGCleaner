@@ -44,7 +44,7 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="Style Guide Cleaner Pro",
+    page_title="Acolad Style Guide Cleaner",
     page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -583,7 +583,7 @@ def analyze_document_complexity(content: Dict) -> Dict:
     return complexity
 
 def main():
-    st.title("🚀 Style Guide Cleaner Pro")
+    st.title("🚀 Acolad Style Guide Cleaner")
     st.markdown("Upload a DOCX style guide file to clean and optimize it for LLM translation with AI-powered enhancement")
     
     # Sidebar

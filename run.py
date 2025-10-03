@@ -15,7 +15,7 @@ def main():
             print("Error: app.py not found. Please run this script from the SGCleaner directory.")
             sys.exit(1)
         
-        print("🚀 Starting Style Guide Cleaner Pro...")
+        print("🚀 Starting Acolad Style Guide Cleaner...")
         print("Features:")
         print("  ✅ Enhanced DOCX processing")
         print("  ✅ AI-powered content optimization")

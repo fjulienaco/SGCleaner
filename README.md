@@ -1,4 +1,4 @@
-# Style Guide Cleaner Pro 🚀
+# Acolad Style Guide Cleaner 🚀
 
 A powerful Streamlit application that cleans and optimizes DOCX style guide files for LLM translation. Features AI-powered content optimization using OpenAI, advanced cleaning algorithms, and comprehensive document analysis.
 
