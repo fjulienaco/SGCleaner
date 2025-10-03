@@ -27,7 +27,7 @@
    - Go to [share.streamlit.io](https://share.streamlit.io/)
    - Click "New app"
    - Connect your GitHub repository
-   - Set main file path: `app.py`
+   - Set main file path: `app.py` (this is the default)
    - Click "Deploy"
 
 3. **Configure Secrets**
