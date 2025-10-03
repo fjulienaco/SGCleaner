@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import tempfile
-from docx import Document
 import re
 import markdown
 from typing import List, Dict, Tuple
@@ -9,6 +8,21 @@ import io
 import openai
 from dotenv import load_dotenv
 import json
+
+# Handle docx import with better error handling
+try:
+    from docx import Document
+except ImportError as e:
+    st.error(f"""
+    **Missing Required Package**: python-docx is not installed.
+    
+    Error: {e}
+    
+    Please install it with: `pip install python-docx`
+    
+    If you're seeing this on Streamlit Community Cloud, please check the requirements.txt file.
+    """)
+    st.stop()
 
 # Load environment variables
 load_dotenv()
